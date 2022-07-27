@@ -28,3 +28,23 @@ li {
 a {
   display: block;
 }
+
+.menu-container {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1072px;
+  width: 100%;
+  height: 4rem;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: var(--color-accent);
+}
+
+.left-link li a,
+.right-link li a {
+  text-decoration: none;
+  color: var(--color-black);
+  cursor: pointer;
+}
