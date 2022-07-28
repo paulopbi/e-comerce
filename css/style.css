@@ -29,6 +29,8 @@ a {
   display: block;
 }
 
+/*menu*/
+
 .menu-container {
   font-size: 24px;
   display: flex;
@@ -47,4 +49,117 @@ a {
   text-decoration: none;
   color: var(--color-black);
   cursor: pointer;
+}
+
+/*products*/
+.products-container {
+  width: 100%;
+  max-width: 1072px;
+  margin: 3.8rem auto;
+}
+
+.products-top {
+  text-align: center;
+  margin: 0 auto 64px auto;
+}
+
+.products__heading {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.products__line {
+  display: block;
+  width: 130px;
+  height: 2px;
+  margin: 16px auto;
+  background-color: var(--color-opacity-gray);
+}
+
+.products-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 228px;
+  margin-bottom: 62px;
+  border-radius: 8px;
+  background-image: url("../assets/banner.png");
+}
+
+.products-banner h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.products-card {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-card a {
+  text-decoration: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.products-card-man {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 470px;
+  width: 336px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/masculino.png");
+}
+
+.products-card-woman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 470px;
+  width: 336px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/feminino.png");
+}
+
+.products-card-kid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 470px;
+  width: 336px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/infantil.png");
+}
+
+.products-card h3 a {
+  font-size: 24px;
+  padding: 64px;
+  transition: all 0.5s ease;
+}
+
+.products-card h3 a:hover {
+  color: var(--color-accent);
 }
