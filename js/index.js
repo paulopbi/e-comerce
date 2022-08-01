@@ -1,5 +1,8 @@
-const _elements = {
-  date: document.querySelector(".date"),
-};
+const year = document.querySelector(".date");
 
-_elements.date.innerHTML = new Date().getFullYear() + ".";
+// !select the date class and fill the innerHTML with the current year in the copyright footer.
+function copyRightYear() {
+  year.innerHTML = new Date().getFullYear() + ".";
+}
+
+copyRightYear();
