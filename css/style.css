@@ -163,3 +163,32 @@ a {
 .products-card h3 a:hover {
   color: var(--color-accent);
 }
+
+/*footer*/
+
+footer {
+  max-width: 1072px;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 15px;
+  margin: 0 auto;
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.date::after {
+  content: "\a";
+  white-space: pre;
+}
+
+@media screen and (min-width: 580px) {
+  .footer {
+    font-size: 1.6rem;
+  }
+
+  .date::after {
+    content: "";
+  }
+}
