@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--GOOGLE FONT-->
+    <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!--CSS-->
+    <!--css-->
     <link rel="stylesheet" href="./css/style.css" />
     <title>E-Comerce</title>
   </head>
@@ -48,28 +48,41 @@
       <div class="products-card">
         <div class="products-card-man">
           <h3>
-            <a href="#"> Masculino </a>
+            <a href="#" class="products-card__man-link"> Masculino </a>
           </h3>
         </div>
         <div class="products-card-woman">
           <h3>
-            <a href="#"> Feminino </a>
+            <a href="#" class="products-card__woman-link"> Feminino </a>
           </h3>
         </div>
         <div class="products-card-kid">
           <h3>
-            <a href="#"> Infantil </a>
+            <a href="#" class="products-card__kid-link"> Infantil </a>
           </h3>
         </div>
       </div>
     </section>
 
+    <!--footer-->
     <footer>
+      <!--copyright, this span line is for javascript manipulation ill use it on copyright current year-->
       <p>
         Paulo Victor <span class="date"></span> Todos Os Direitos Reservados
         &copy;.
       </p>
     </footer>
+
+    <!--out of stock modal-->
+    <div class="out-modal-container">
+      <!--modal body-->
+      <div class="out-modal">
+        <p>Produto indisponivel no momento 😥</p>
+        <a href="#" class="out-modal__close">Fechar</a>
+      </div>
+    </div>
+    
+    <!--javascript-->
     <script defer src="js/index.js"></script>
   </body>
 </html>
