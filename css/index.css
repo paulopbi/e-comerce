@@ -39,7 +39,7 @@ a {
   max-width: 1072px;
   width: 100%;
   height: 4rem;
-  padding: 20px;
+  padding: 30px 16px;
   margin: 0 auto;
   background-color: var(--color-accent);
 }
@@ -184,6 +184,9 @@ footer {
 }
 
 @media screen and (min-width: 580px) {
+
+  /*will do a brake line on the footer */
+  
   .footer {
     font-size: 1.6rem;
   }
