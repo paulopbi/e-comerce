@@ -38,8 +38,8 @@ a {
   align-items: center;
   max-width: 1072px;
   width: 100%;
-  height: 4rem;
-  padding: 30px 16px;
+  height: 4.8rem;
+  padding: 27px 24px;
   margin: 0 auto;
   background-color: var(--color-accent);
 }
@@ -47,55 +47,100 @@ a {
 .left-link li a,
 .right-link li a {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
   color: var(--color-black);
   cursor: pointer;
+  transition: all ease-in-out 300ms;
 }
 
-/*products*/
-.products-container {
+.left-link li a:hover,
+.right-link li a:hover {
+  color: var(--color-white);
+}
+
+/*heading block*/
+
+.heading-block-container {
   width: 100%;
   max-width: 1072px;
-  margin: 3.8rem auto;
+  margin: 3rem auto;
 }
 
-.products-top {
+.heading-block-content {
   text-align: center;
-  margin: 0 auto 64px auto;
 }
 
-.products__heading {
+.heading-block__h1 {
   font-size: 2.1rem;
   font-weight: bold;
   color: var(--color-black);
+  transition: all ease 0.5s;
 }
 
-.products__line {
+.heading-block__h1:hover {
+  color: var(--color-accent);
+}
+
+.heading-block-line {
   display: block;
   width: 130px;
   height: 2px;
-  margin: 16px auto;
+  margin: 1rem auto;
   background-color: var(--color-opacity-gray);
 }
 
-.products-banner {
+.heading-block__paragraphy {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--color-dark-gray);
+}
+
+/*discount banner*/
+
+.discount-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1072px;
   height: 228px;
-  margin-bottom: 62px;
+  margin: 3rem auto;
+  padding: 1rem;
   border-radius: 8px;
   background-image: url("../assets/banner.png");
 }
 
-.products-banner h2 {
+.discount-banner h2 {
   font-size: 24px;
-  font-weight: bold;
+  line-height: 28px;
+  font-weight: normal;
   color: var(--color-white);
+  transition: ease 0.5s;
+  cursor: not-allowed;
+  text-transform: capitalize;
 }
 
-.products-card {
+.discount-banner h2:hover {
+  color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+/*category*/
+
+.category-container {
+  width: 100%;
+  max-width: 1072px;
+  margin: 3rem auto;
+}
+
+.category-card {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -103,13 +148,20 @@ a {
   justify-content: center;
 }
 
-.products-card a {
+.category-card a {
+  font-size: 28px;
+  padding: 2.5rem;
   text-decoration: none;
   color: var(--color-white);
   cursor: pointer;
+  transition: all 400ms ease-in-out;
 }
 
-.products-card-man {
+.category-card a:hover {
+  color: var(--color-accent);
+}
+
+.category-card-man {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +176,7 @@ a {
   background-image: url("../assets/masculino.png");
 }
 
-.products-card-woman {
+.category-card-woman {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +191,7 @@ a {
   background-image: url("../assets/feminino.png");
 }
 
-.products-card-kid {
+.category-card-kid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,16 +204,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../assets/infantil.png");
-}
-
-.products-card h3 a {
-  font-size: 24px;
-  padding: 64px;
-  transition: all 0.5s ease;
-}
-
-.products-card h3 a:hover {
-  color: var(--color-accent);
 }
 
 /*footer*/
@@ -184,9 +226,8 @@ footer {
 }
 
 @media screen and (min-width: 580px) {
-
   /*will do a brake line on the footer */
-  
+
   .footer {
     font-size: 1.6rem;
   }
