@@ -53,6 +53,11 @@ a {
   cursor: pointer;
 }
 
+.left-link li a:hover,
+.right-link li a:hover {
+  color: var(--color-white);
+}
+
 /*heading block*/
 
 .heading-block-container {
