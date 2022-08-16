@@ -6,7 +6,7 @@ const modalCloseBtn = document.querySelector(".out-modal__close");
 
 // !copyRightFunction - select the date class and fill the innerHTML with the current year in the copyright footer.
 function copyRightYear() {
-  return year.innerHTML = new Date().getFullYear() + ".";
+  return (year.innerHTML = new Date().getFullYear() + ".");
 }
 
 copyRightYear();
