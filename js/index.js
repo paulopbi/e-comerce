@@ -1,7 +1,7 @@
 const year = document.querySelector(".date");
 const modalContainer = document.querySelector(".out-modal-container");
-const womanCard = document.querySelector(".products-card-woman");
-const kidCard = document.querySelector(".products-card-kid");
+const womanCard = document.querySelector(".category-card-woman");
+const kidCard = document.querySelector(".category-card-kid");
 const modalCloseBtn = document.querySelector(".out-modal__close");
 
 // !copyRightFunction - select the date class and fill the innerHTML with the current year in the copyright footer.
