@@ -1,20 +1,19 @@
-const elements = {
-  womanCategory: document.querySelector(".category-card-woman h3 a"),
-  kidCategory: document.querySelector(".category-card-kid h3 a"),
-  closeModalBtn: document.querySelector(".out-modal__close"),
-  outModalContainer: document.querySelector(".out-modal-container"),
-  copyRightYear: document.querySelector(".date"),
+const womanCategoryLink = document.querySelector(".category-card-woman h3 a");
+const kidCategoryLink = document.querySelector(".category-card-kid h3 a");
+const closeModalBtn = document.querySelector(".out-modal__close");
+const outModalContainer = document.querySelector(".out-modal-container");
+const copyRightSpan = document.querySelector(".date");
 
-  handleModalClick: (event) => {
-    event.preventDefault();
-    elements.outModalContainer.classList.toggle("show");
-  },
+function handleModalClick(event) {
+  event.preventDefault();
+  outModalContainer.classList.toggle("show");
+}
 
-  copyRight: () =>
-    (elements.copyRightYear.innerHTML = new Date().getFullYear() + "."),
-};
+function copyRight() {
+  return (copyRightSpan.innerHTML = new Date().getFullYear() + ".");
+}
 
-elements.womanCategory.addEventListener("click", elements.handleModalClick);
-elements.kidCategory.addEventListener("click", elements.handleModalClick);
-elements.closeModalBtn.addEventListener("click", elements.handleModalClick);
-elements.copyRight();
+copyRight();
+womanCategoryLink.addEventListener("click", handleModalClick);
+kidCategoryLink.addEventListener("click", handleModalClick);
+closeModalBtn.addEventListener("click", handleModalClick);
