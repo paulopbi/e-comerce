@@ -1,26 +1,28 @@
-const elements = {
-  dragonBallBtn: document.querySelector(".products-card-dragonball__button"),
-  buyModal: document.querySelector(".buy-modal"),
-  buyModalClose: document.querySelector(".buy-modal-close__btn"),
-  copyRightYear: document.querySelector(".date"),
-  buyNowBtn: document.querySelector(".buy-modal__btn"),
+const dragonBallBtn = document.querySelector(
+  ".products-card-dragonball__button"
+);
+const buyModal = document.querySelector(".buy-modal");
+const buyModalClose = document.querySelector(".buy-modal-close__btn");
+const buyNowBtn = document.querySelector(".buy-modal__btn");
+const copyRightSpan = document.querySelector(".date");
 
-  handleModalClick: (event) => {
-    //?add / remove the classlist 'show' then add display block / none on css.
-    event.preventDefault();
-    elements.buyModal.classList.toggle("show");
-  },
+function handleModalClick(event) {
+  //?add / remove the classlist 'show' then add display block / none on css.
+  event.preventDefault();
+  buyModal.classList.toggle("show");
+}
 
-  alertMsg: () =>
-    //?return the alert with a 'thank you' message.
-    window.alert("MUITO OBRIGADO POR TESTAR O MEU SITE!!"),
+function alertMsg() {
+  //?return the alert with a 'thank you' message.
+  return window.alert("MUITO OBRIGADO POR TESTAR O MEU SITE!!");
+}
 
-  copyRight: () =>
-    //?copyRight - return the year and fill it on footer innerHTML.
-    (elements.copyRightYear.innerHTML = new Date().getFullYear() + "."),
-};
+function copyRight() {
+  //?copyRight - return the year and fill it on footer innerHTML.
+  copyRightSpan.innerHTML = new Date().getFullYear() + ".";
+}
 
-elements.dragonBallBtn.addEventListener("click", elements.handleModalClick);
-elements.buyModalClose.addEventListener("click", elements.handleModalClick);
-elements.buyNowBtn.addEventListener("click", elements.alertMsg);
-elements.copyRight();
+copyRight();
+dragonBallBtn.addEventListener("click", handleModalClick);
+buyModalClose.addEventListener("click", handleModalClick);
+buyNowBtn.addEventListener("click", alertMsg);
