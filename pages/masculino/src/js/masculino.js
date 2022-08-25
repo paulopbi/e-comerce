@@ -17,7 +17,7 @@ const elements = {
     elements.buyModal.classList.remove("show");
   },
 
-  alertMsg: () => 
+  alertMsg: () =>
     //?return the alert with a 'thank you' message.
     window.alert("MUITO OBRIGADO POR TESTAR O MEU SITE!!"),
 
