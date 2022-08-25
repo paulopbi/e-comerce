@@ -19,7 +19,7 @@ function alertMsg() {
 
 function copyRight() {
   //?copyRight - return the year and fill it on footer innerHTML.
-  copyRightSpan.innerHTML = new Date().getFullYear() + ".";
+  return copyRightSpan.innerHTML = new Date().getFullYear() + ".";
 }
 
 copyRight();
