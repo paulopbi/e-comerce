@@ -5,8 +5,8 @@ const elements = {
   copyRightYear: document.querySelector(".date"),
   buyNowBtn: document.querySelector(".buy-modal__btn"),
 
-  addModalClick: (event) => {
-    //?add the classlist 'show' then add display block on css.
+  handleModalClick: (event) => {
+    //?add / remove the classlist 'show' then add display block / none on css.
     event.preventDefault();
     elements.buyModal.classList.add("show");
   },
@@ -26,7 +26,7 @@ const elements = {
     (elements.copyRightYear.innerHTML = new Date().getFullYear() + "."),
 };
 
-elements.dragonBallBtn.addEventListener("click", elements.addModalClick);
-elements.buyModalClose.addEventListener("click", elements.closeBtnClick);
+elements.dragonBallBtn.addEventListener("click", elements.handleModalClick);
+elements.buyModalClose.addEventListener("click", elements.handleModalClick);
 elements.buyNowBtn.addEventListener("click", elements.alertMsg);
 elements.copyRight();
