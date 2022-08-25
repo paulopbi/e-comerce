@@ -8,13 +8,7 @@ const elements = {
   handleModalClick: (event) => {
     //?add / remove the classlist 'show' then add display block / none on css.
     event.preventDefault();
-    elements.buyModal.classList.add("show");
-  },
-
-  closeBtnClick: (event) => {
-    //?remove the classlist 'show' then it will be display 'none' on css.
-    event.preventDefault();
-    elements.buyModal.classList.remove("show");
+    elements.buyModal.classList.toggle("show");
   },
 
   alertMsg: () =>
