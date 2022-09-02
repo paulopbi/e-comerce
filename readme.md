@@ -25,7 +25,7 @@
 <br>
 
 <div align="center">
-  <img src="./assets/cover.png" alt="Logo" width="500em">
+  <img src="./assets/cover.png" alt="Logo" width="800em">
 </div>
 
 ## Sobre o projeto
